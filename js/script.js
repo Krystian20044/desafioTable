@@ -46,20 +46,20 @@ function excluirAluno(index) {
     mostrarAlunos()
 }
 
-function editarAluno(){
-    alunoEditIndex = index;
-    const aluno = listaAlunos[index];
+function editarAluno(index){
+    alunoEditIndex = index
+    const aluno = listaAlunos[index]
 
     document.getElementById("nome").value = aluno.nome;
     document.getElementById("dataNasc").value = aluno.dataNasc;
     document.getElementById("curso").value = aluno.curso;
     
-    document.getElementById("msg").innerHTML = "<p>Edite as informações e clique e, 'Cadastrar' para salvar.</p>";
-
-    function limparCampos(){
-        document.getElementById("nome").value= "";
-        document.getElementById("dataNasc").value("dataNasc").value= "";
-        document.getElementById("curso").selectedIndex = 0;
-    }
+    document.getElementById("msg").innerHTML = "<p>Edite as informações e clique e, 'Cadastrar' para salvar.</p>"
     
+}
+
+function limparCampos(){
+    document.getElementById("nome").value= "";
+    document.getElementById("dataNasc").value("dataNasc").value= "";
+    document.getElementById("curso").selectedIndex = 0;
 }
